@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  line-height: 50vw;
+  height: 50vw;
+  width: 100%;
+  color: white;
+  background-image: url("assets/test.jpg");
+  background-size: cover;
+}
+
+.containerus{
+  line-height: 50vw;
+  height: 50vw;
+  width: 100%;
+  color: black;
+  background-image: url("assets/us.jpg");
+  background-size: cover;
+}
+header{
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+
+}
+header.active{
+  background: #F77F00;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #d62828;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: black;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.title {
+  font-family: "My Custom Font", sans-serif;
+  background-color: #d62828;
+  color: white;
+  text-align: center;
+  width: 25%;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+.image-left,
+.image-right {
+  width: 100%;
+  margin: 1em 0;
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.test{
+  width: 100%;
+}
+
+@media (min-width: 20em) {
+  .image-left,
+  .image-right {
+    display: flex;
+    align-items: center;
+  
+  
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+  }
+  .image-left img {
+    margin-right: 1em;
+    float: left; /* fallback */
+  }
+
+  .image-right img {
+    order: 1;
+    margin-left: 1em;
+    float: right;
+  }
+
+  .image-left::after,
+  .image-right::after {
+    content: "";
+    display: block;
+    clear: both;
+  
+  }
+}
+
+@media (min-width: 30em) {
+  .image-left img,
+  .image-right img {
+    flex-shrink: 0;
+    
+  }
+}
+.savoir {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #F77F00;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  }
+
+  .savoir:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    }
+
+  .collapsible {
+      background-color: #D62828;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 30%;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 15px;
+      margin-left: 3%;
+    }
+
+    .squarebutton {
+      background-color: #D62828;
+      color: white;
+      padding: 18px;
+      width: 15%;
+      border: none;
+      text-align: center;
+      font-size: 15px;
+      margin-right: 3%;
+
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+    
+    .collapsible:after {
+      content: '\002B';
+      color: white;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2212";
+    }
+    
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      width: 20%;
+      margin-left: 3%;
+      transition: max-height 0.2s ease-out;
+     
+    }
+
+    a {
+      color: white;
+      background: linear-gradient(
+        to bottom,
+        var(--mainColor) 0%,
+        var(--mainColor) 100%
+      );
+      background-position: 0 110%;
+      background-repeat: repeat-x;
+      background-size: 4px 4px;
+      transition: background-size 0.2s;
+    }
+
+figure {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  flex-direction: column;
+  background-image: url("assets\test.jpg");
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+.figure .figcaption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  font-family: "My Custom Font", sans-serif;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: fill;
+}
+
+.center-fit {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+@font-face {
+  font-family: "My Custom Font";
+  src: url(ostrich-sans-black.ttf) format("truetype");
+}
