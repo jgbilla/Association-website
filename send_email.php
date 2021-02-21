@@ -69,8 +69,7 @@ if (isset($_POST['Email'])) {
 
     <!-- include your success message below -->
 
-    Thank you for contacting us. We will be in touch with you very soon.
-
+Merci de nous avoir contacte, nous vous repondrons dans les prochains jours.
 <?php
 }
 ?>

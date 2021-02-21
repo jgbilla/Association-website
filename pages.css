@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+
+
+.tab {
+
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-padding-start: 0;
+  justify-content: space-between;
+  margin: 100px auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  width: 50%;
+
+  
+}
+
+/*overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  */
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  text-align: left;
+  
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: blue;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color:blue;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  animation: fadeEffect 1s;
+  margin-bottom: 100px;
+  
+
+}
+.tabcontent h3{
+
+  margin: 0 auto;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  text-align: left;
+  font-size: 15px;
+
+  
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+
+
+
+input {
+  width: 100%;
+  border: 1px solid #f1e1e1;
+  display: block;
+  padding: 5px 10px;
+}
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+table {
+  width: 80%;
+	border: 1px solid #eeeeee;
+}
+
+.table-header {
+	display: flex;
+	width: 100%;
+	background: black;
+	padding: (12px * 1.5) 0;
+}
+
+
+th{
+  flex: 1 1 20%;
+	text-align: center;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+
+td{
+  
+  display: block;
+  flex: 1 1 100%;
+  text-align: center;
+  width: 20%;
+  
+}
+
+.modifieda{
+  color: black;
+}
+.text{
+  text-decoration-color: black;
+}
+
+tr{
+  display: flex;
+	width: 100%;
+  padding: (12px * 1.5) 0;
+  
+}
+
+tr:nth-of-type(odd){
+  background: #eeeeee;
+}
+
+
+
+.containeradmin {
+  margin: 0;
+  text-decoration-color: black;
+  position: relative;
+  top: 100px;
+  left: 27%;
+  bottom: 75px;
+  padding-bottom: 75px;
+  
+
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: white;
+  text-align: center;
+  opacity: 80%;
+
+}
+
+#echo { opacity: 0; }
+
+form h3{
+padding-bottom: 25px;
+}

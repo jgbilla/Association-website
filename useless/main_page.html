@@ -2,7 +2,7 @@
 <html lang="fr">
   <title>"Association Burkinabe Pour la Promotion des Mathematiques"</title>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width" initial-scale="1.0" />
   <link rel="stylesheet" href="design.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
@@ -26,12 +26,13 @@
     
     <div class="container">
       <h1 id="my-text" class="animate__animated animate__backInDown">
-        Bienvenue sur le site officiel de La Communaute Mathematique
+        Bienvenue sur le site officiel de La Communauté Mathématique
       </h1>
       <script>
         fitty("#my-text");
       </script>
     </div>
+    
     <header class="animate__animated animate__backInRight header">
       <div class="dropdown">
         <div class="dropbtn">Home</div>
@@ -40,16 +41,10 @@
         <div class="dropbtn"><a href="us.html">Informations Generales</a></div>
       </div>
       <div class="dropdown">
-        <div class="dropbtn">Competition 2020</div>
+        <div class="dropbtn"><a href="Competition/competition.html"> Competition</a></div>
       </div>
       <div class="dropdown">
-        <div class="dropbtn">Archives</div>
-      </div>
-      <div class="dropdown">
-        <div class="dropbtn">Contactez-nous</div>
-      </div>
-      <div class="dropdown">
-        <div class="dropbtn">Faire un don</div>
+        <div class="dropbtn"><a href="login/login.html"> Nos clubs de Mathematique</a></div>
       </div>
       
     </header>
@@ -61,9 +56,9 @@
         style="width: 25%; height: 15vw"
       />
       <div class="test">
-        <h1 class="title">Qui NOUS SOMMES</h1>
+        <h1 class="title">Qui nous sommes</h1>
         <p id="who-we-are">
-          Nous sommes une organisation a but non lucratif dont le but est la promotion des Mathematiques dans les lycees et colleges du Burkina Faso. 
+          Nous sommes une organisation a but non lucratif dont le but est la promotion des Mathematiques dans les lycees et colleges du Burkina Faso. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia excepturi autem expedita nihil provident molestias aut voluptatum fuga praesentium fugiat fugit asperiores quasi nulla quidem dignissimos, sapiente, maiores dicta commodi. 
         </p>
         <script>
           fitty("#who-we-are");
@@ -72,27 +67,9 @@
       </div>
     </div>
 
-    <div class="image-right">
-      <img
-        src="assets/main_page_asset.jpg"
-        alt="Test"
-        style="width: 25%; height: 15vw"
-      />
-      <div class="test">
-        <h1 class="title">NOS ACTIVITES</h1>
-        <div class="row">
-        <button class="collapsible">GRAND CHALLENGE MATHEMATIQUE DE OUAGADOUGOU</button>
-<div class="content">
-  <h6 style="color: blue;"><a href="#"> EDITION 2020</a></h6>
-  <h6 style="color: blue;"><a href="#">EDITIONS PASSEES</a></h6>
-</div>
-<div class="squarebutton">NOS ARTICLES</div> 
-</div>
-      </div>
-    </div>
-
+   
     <div class="w3-container w3-content w3-padding-64" style="max-width: 800px;" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <h2 class="w3-wide w3-center">CONTACTEZ NOUS</h2>
     <p class="w3-opacity w3-center"><i>Vous pouvez laisser un message</i></p>
     <div class="w3-row w3-padding-32"></div>
     <div class="w3-col m6 w3-large w3-margin-bottom">
@@ -104,7 +81,7 @@
 <form name="contact_form" action="send_email.php" method="post">
   <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
     <div class="w3-half">
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" name="Name">
+      <input class="w3-input w3-border" type="text" placeholder="Nom" required name="Name" name="Name">
     </div>
     <div class="w3-half">
       <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" name="Email">

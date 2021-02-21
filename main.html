@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+  <link rel="stylesheet" href="design.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+    rel="stylesheet"
+  />
+  <script src="fitty.min.js"></script>
+
+  <title>Page d'acceuil</title>
+</head>
+<body>
+  <div class="fwh-slide">
+    <div class="container">
+      <h1 id="my-text" class="animate__animated animate__backInDown">
+        Bienvenue sur le site officiel de La Communauté Mathématique
+      </h1>
+      <script>
+        fitty("#my-text");
+      </script>
+    </div>
+  </div>
+
+  <header class="animate__animated animate__backInRight header">
+    <div class="dropdown">
+      <div class="dropbtn">Home</div>
+    </div>
+    <div class="dropdown">
+      <div class="dropbtn"><a href="us.html">Informations Generales</a></div>
+    </div>
+    <div class="dropdown">
+      <div class="dropbtn"><a href="Competition/competition.html"> Competition</a></div>
+    </div>
+    <div class="dropdown">
+      <div class="dropbtn"><a href="login.php"> Nos clubs de Mathematique</a></div>
+    </div>
+    
+  </header>
+
+  <div class="fwh-slide2">
+   <div class="text-box">
+    <div class="test">
+      <p id="who-we-are">
+        Nous sommes une organisation a but non lucratif dont le but est la promotion des Mathematiques dans les lycees et colleges du Burkina Faso. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia excepturi autem expedita nihil provident molestias aut voluptatum fuga praesentium fugiat fugit asperiores quasi nulla quidem dignissimos, sapiente, maiores dicta commodi. 
+      </p>
+      <script>
+        fitty("#who-we-are");
+      </script>
+    <div align="center"><a class="savoir" href="us.html" target="_blank" rel="nofollow noopener">En Savoir Plus</a></div>
+    </div>
+
+  </div>
+
+  </div>
+
+
+  
+  <div class="w3-container w3-content w3-padding-64" style="max-width: 800px;" id="contact">
+    <h2 class="w3-wide w3-center">CONTACTEZ NOUS</h2>
+    <p class="w3-opacity w3-center"><i>Vous pouvez laisser un message</i></p>
+    <div class="w3-row w3-padding-32"></div>
+    <div class="w3-col m6 w3-large w3-margin-bottom">
+<i class="fa fa-map-marker" style="width: 500px;">  OUAGADOUGOU, BF</i>
+<i class="fa fa-phone" style="width:30px"></i>Telephone: +22676170020<br>
+<i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+</div>
+<div class="w3-col m6">
+<form name="contact_form" action="send_email.php" method="post">
+  <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+    <div class="w3-half">
+      <input class="w3-input w3-border" type="text" placeholder="Nom" required name="Name" name="Name">
+    </div>
+    <div class="w3-half">
+      <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" name="Email">
+    </div>
+  </div>
+  <input class="w3-input w3-border" type="text" placeholder="message" required name="Message" name="Message">
+  <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+
+  <script language=”JavaScript”>
+
+    var frmvalidator = new Validator("contactform"); frmvalidator.addValidation("name","req","Please provide your name"); 
+    frmvalidator.addValidation("email","req","Please provide your email"); 
+    frmvalidator.addValidation("email","email", "Please enter a valid email address"); </script>
+</form>
+</div>
+</div>
+<script src="code.js"></script>
+</body>
+</html>
